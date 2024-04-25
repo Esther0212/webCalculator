@@ -8,37 +8,34 @@
 </head>
 
 <body>
-    <h1>JavaScript Calculator</h1>
-    <h2>Eblacas, Esther Beuthel G. (IT2R3)</h2>
-    
     <div class="container">
         <input type="text" class="display" readonly>
 
         <div class="buttons">
-        <li><button class="orange" onclick="numberClick('AC')">AC</button></li>
-        <li><button class="orange" onclick="numberClick('DEL')">DEL</button></li>
-        <li><button onclick="numberClick('%')">%</button></li>
-        <li><button class="operation" onclick="numberClick('/')">/</button></li>
+        <li><button class="orange" data-value="AC">AC</button></li>
+        <li><button class="orange" data-value="DEL">DEL</button></li>
+        <li><button data-value="(-">+/-</button></li>
+        <li><button class="operation" data-value="/">/</button></li>
 
-        <li><button onclick="numberClick('7')">7</button></li>
-        <li><button onclick="numberClick('8')">8</button></li>
-        <li><button onclick="numberClick('9')">9</button></li>
-        <li><button class="operation" onclick="numberClick('*')">*</button></li>
+        <li><button data-value="7">7</button></li>
+        <li><button data-value="8">8</button></li>
+        <li><button data-value="9">9</button></li>
+        <li><button class="operation" data-value="*">*</button></li>
 
-        <li><button onclick="numberClick('4')">4</button></li>
-        <li><button onclick="numberClick('5')">5</button></li>
-        <li><button onclick="numberClick('6')">6</button></li>
-        <li><button class="operation" onclick="numberClick('-')">-</button></li>
+        <li><button data-value="4">4</button></li>
+        <li><button data-value="5">5</button></li>
+        <li><button data-value="6">6</button></li>
+        <li><button class="operation" data-value="-">-</button></li>
 
-        <li><button onclick="numberClick('1')">1</button></li>
-        <li><button onclick="numberClick('2')">2</button></li>
-        <li><button onclick="numberClick('3')">3</button></li>
-        <li><button class="operation" onclick="numberClick('+')">+</button></li>
+        <li><button data-value="1">1</button></li>
+        <li><button data-value="2">2</button></li>
+        <li><button data-value="3">3</button></li>
+        <li><button class="operation" data-value="+">+</button></li>
 
-        <li><button onclick="numberClick('0')">0</button></li>
-        <li><button onclick="numberClick('.')">.</button></li>
-        <li><button onclick="numberClick('Ans')">Ans</button></li>
-        <li><button class="operation" onclick="numberClick('=')">=</button></li>
+        <li><button data-value="0">0</button></li>
+        <li><button data-value=".">.</button></li>
+        <li><button data-value="()">( )</button></li>
+        <li><button class="operation" data-value="=">=</button></li>
     </div>
 </body>
 
